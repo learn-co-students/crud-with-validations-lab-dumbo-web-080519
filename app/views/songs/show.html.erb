@@ -1,0 +1,6 @@
+<h1>Here is <%= @song.title %>'s Page  </h1>
+
+<h2><%= @song.title%> by <%= @song.artist_name %><br></h2>
+<h3>Released: <%= @song.release_year %><br> Genre: <%= @song.genre %></h3>
+
+<%= button_to "Delete #{@song.title}", @song, method: :delete %>
